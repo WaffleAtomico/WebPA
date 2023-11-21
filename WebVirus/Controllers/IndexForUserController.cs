@@ -9,11 +9,11 @@ using Microsoft.Extensions.Logging;
 namespace WebVirus.Controllers
 {
     [Route("[controller]")]
-    public class LoginController : Controller
+    public class IndexForUserController : Controller
     {
-        private readonly ILogger<LoginController> _logger;
+        private readonly ILogger<IndexForUserController> _logger;
 
-        public LoginController(ILogger<LoginController> logger)
+        public IndexForUserController(ILogger<IndexForUserController> logger)
         {
             _logger = logger;
         }

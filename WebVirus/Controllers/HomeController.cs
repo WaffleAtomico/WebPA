@@ -36,7 +36,7 @@ public class HomeController : Controller
     public User user {get; set;}
     public IActionResult LoginValidation()
     {
-        return View("Index");
+        return View("Index", "_Layout"); //la vista, llamada index, y el layout que se va a utilizar
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
