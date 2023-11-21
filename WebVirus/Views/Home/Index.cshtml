@@ -1,8 +1,54 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-user-o"></span>
+                        </div>
+                        <h3 class="text-center mb-4">Inicia sesión</h3>
+                        @* Se puede validar que el user name y el pwd, sean correctos, ya que estos
+                            Se repiten en tooodos los usuarios, sin importar el tipo, podemos hacer algo
+                            Es mexicanada, pero....
+                            Hacer un chequeo y buscar el usuario en todas las tablas
+                            Ya que en el login no sabemos cual de estos usuarios estamos mandando a llamar
+                            Y hacer un radioButton es una nacada sinceramente
+                            Pero entre una nacada visual y una nacada Codificada... prefiero la codificada 
+                         *@
+                        <form action="#" class="login-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control rounded-left" placeholder="Username" required>
+                            </div>
+                            <div class="form-group d-flex">
+                                <input type="password" class="form-control rounded-left" placeholder="Password"
+                                    required>
+                            </div>
+                            <div class="form-group d-md-flex" style="margin-bottom: 2rem;">
+                                <div class="w-50 text-md-right">
+                                    <a href="#">Crear cuenta</a>
+                                </div>
+                                <div class="w-50 text-md-right">
+                                    <a href="#">Olvidé mi contraseña</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" style="align-content: center;" class="btn btn-outline-success">Iniciar sesión</button>
+                            </div>
+                        </form>
+                        @* Se debe de enviar la informacion de este form a un controlador, ese controlador
+                            Va a tener que poder abrir una vista, dependiendo del usuario en el que haya encontrado
+                            Si no esta en ninguna tabla ese usuario
+                            Se tendra que escribir que no fue encontrado, para las validaciones
+                            Hay que ver un video llamado validations
+                            
+                         *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
