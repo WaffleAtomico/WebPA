@@ -33,10 +33,30 @@ public class HomeController : Controller
         return View("CreateAcount");
     }
     [BindProperty]
-    public User user {get; set;}
+    public User user { get; set; }
     public IActionResult LoginValidation()
     {
-        return View("Index", "_Layout"); //la vista, llamada index, y el layout que se va a utilizar
+        int x = 1;
+        if (x == 1) // Alumno
+        {
+            return View("~/Views/IndexForUser/Almacenist/AlmacenistIndex.cshtml"); //la vista, llamada index, y el layout que se va a utilizar
+        }
+        else if (x == 2) //Profesor
+        {
+            return View("~/Views/IndexForUser/Almacenist/AlmacenistIndex.cshtm");
+        }
+        else if (x == 3) //almacenista
+        {
+            return View("Index", "_Layout");
+        }
+        else if (x == 4) //Coordinador
+        {
+            return View("Index", "_Layout");
+        }
+        else
+        {
+            return View("Index", "_Layout");
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
