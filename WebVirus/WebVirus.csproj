@@ -9,8 +9,13 @@
   <ItemGroup>
   <Using Include="System.Console" Static="true" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+ <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.13" />
   </ItemGroup>
 
 

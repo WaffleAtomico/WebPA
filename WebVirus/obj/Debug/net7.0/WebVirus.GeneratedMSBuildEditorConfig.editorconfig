@@ -32,8 +32,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/IndexForUser/Almacenist/AlmacenistIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhGb3JVc2VyXEFsbWFjZW5pc3RcQWxtYWNlbmlzdEluZGV4LmNzaHRtbA==
+[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/IndexForUser/AlmacenistIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhGb3JVc2VyXEFsbWFjZW5pc3RJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/IndexForUser/CordinatorIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhGb3JVc2VyXENvcmRpbmF0b3JJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/IndexForUser/ProfesorIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhGb3JVc2VyXFByb2Zlc29ySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/IndexForUser/StudentIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhGb3JVc2VyXFN0dWRlbnRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/Shared/Error.cshtml]
@@ -42,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/Shared/_LayoutBackLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRCYWNrTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/Shared/_LayoutUserSinged.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyU2luZ2VkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/penil/Documents/GitHub/WebPA/WebVirus/Views/Shared/_ValidationScriptsPartial.cshtml]

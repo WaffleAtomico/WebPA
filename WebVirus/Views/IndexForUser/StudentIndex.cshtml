@@ -1,0 +1,56 @@
+@{
+    Layout = "~/Views/Shared/_layoutBackLogin.cshtml";
+    ViewData["Title"] = "StudentIndex";
+}
+@model WebVirus.DBModels.Order
+@* El usuario debe de tener un boton para generar una nueva ficha *@
+@* Abajo de ese, va a mostrar las fichas que tenga, esto todavia esta pendiente *@
+@* Ya que no tenemos el scaffolding *@
+@* De momento, haz una tabla en donde se vean los campos de la ficha de este usuario *@
+@* El boton pon como referencia esta misma, ya despues le vamos a cambiar el tipo de referenciasion *@
+@* Que sera esta misma, pero por medio de un controlador *@
+<div class="container">
+    <h1>Menú del usuario</h1>
+    <a href="URL_PARA_GENERAR_NUEVA_ORDER" class="btn btn-primary mb-3">Generar Nueva Orden</a>
+
+    <h2>Mis Órdenes</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">IDOrder</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Delivery Time</th>
+                    <th scope="col">Return Time</th>
+                    <th scope="col">Student</th>
+                    <th scope="col">Professor</th>
+                    <th scope="col">Classroom</th>
+                    <th scope="col">Equipment</th>
+                </tr>
+            </thead>
+            <tbody>
+                @* 
+                Aqui, creo que vamos a tener que generar algo para que tenga la lista
+                Del usuario en especifico
+                pq aqui estamos viendo toooodas, las ordenes MMM
+                 *@
+                @* @foreach (var order in Model.Orders.Where(O => O.FkStudent == UserID)) *@
+                @foreach(var order in ViewBag.Order)
+                {
+                    <tr>
+                        <td>@order.IDOrder</td>
+                        <td>@order.Date</td>
+                        <td>@order.DeliveryTime</td>
+                        <td>@order.ReturnTime</td>
+                        <td>@order.FkStudent</td>
+                        <td>@order.FkProfessor</td>
+                        <td>@order.ClassroomFK</td>
+                        <td>@order.FkEquipment</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@* Desde aqui para abajo, usa boostrap se puede buscar en la pagina de boostrap como hacer estas tablas*@
+

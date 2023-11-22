@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebVirus.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\penil\\Documents\\GitHub\\WebPA\\WebVirus\\wwwroot\\Media\\profile-icon.png",
+      "PackagePath": "staticwebassets\\Media\\profile-icon.png"
+    },
+    {
       "Id": "C:\\Users\\penil\\Documents\\GitHub\\WebPA\\WebVirus\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

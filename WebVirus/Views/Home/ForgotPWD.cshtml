@@ -2,5 +2,16 @@
     Layout = "~/Views/Shared/_layoutBackLogin.cshtml";
     ViewData["Title"] = "Recuperar Contrasena";
 }
+@model WebVirus.DBModels.User
 
-<h1>Olvide mi contrasena pq soy bobo</h1>
+<h1>Recuperar contraseña</h1>
+
+@* Forms, en donde pongas un input en donde agregues datos *@
+@* Sin importar el usuario, debe de encontrar el identificador *(Esto va en el controlador, ahorita )*@
+@* De momento, en el forms, debes de hacer un input, en donde vas a hacer referencia a una funcion *@
+@* En esa funcion debe de buscar, igualmente, en tooodas, las tablas, *@
+<form method="post" asp-action="ForgotPWD">
+    <label for="username">Nombre de usuario: </label>
+    <input asp-for="User1" type="text" id="username" name="username" required>
+    <button type="submit">Recuperar contraseña</button>
+</form>
